@@ -1,0 +1,7 @@
+1. Command to load the penguins dataset using seaborn
+2. Generate code to build a `ColumnTransformer` using `OneHotEncoder` for the `species`, `island`, and `sex` variables, while keeping numeric columns like `bill` and `flipper` intact
+3. Write code to split the dataset into 40/60, 60/40, 80/20, and 90/10 train/test ratios
+4. Create a function `train_tree(X_train, y_train, max_depth=None)` to train a decision tree with `criterion='entropy'`
+5. Write code that uses `model.predict(X_test)`, prints a `classification_report`, and plots a confusion matrix with Matplotlib annotations
+6. Create a loop over the ratios `[0.4, 0.6]`, `[0.6, 0.4]`, `[0.8, 0.2]`, `[0.9, 0.1]`, retrain the model for each split, record test-set accuracy, and display a formatted DataFrame of ratio vs. accuracy
+7. Write code to iterate `max_depth` from 1 to 10, record test-set accuracy for each, and use Matplotlib to plot a single chart of depth vs. accuracy
