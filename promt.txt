@@ -1,0 +1,7 @@
+1. Write the pip install commands to install the required libraries: pandas, scikit-learn, matplotlib, seaborn, graphviz, and ucimlrepo.
+2. Write code to fetch the UCI Heart Disease dataset (ID=45) using ucimlrepo, extract the features and targets, and save the full dataset to a CSV file.
+3. Convert the target labels to binary: 0 for no heart disease, and 1 for any presence of heart disease (i.e., if y > 0, set y = 1).
+4. Write a function using matplotlib and seaborn to plot the class distribution of the entire dataset, and for multiple train/test splits (e.g., 40/60, 60/40, etc.).
+5. For several train/test split ratios (e.g., 40%, 60%, 80%, 90%), train a DecisionTreeClassifier and visualize the trained tree using graphviz, saving each tree as a PNG file.
+6. For each split ratio, evaluate the trained model using classification_report and plot the confusion_matrix using seaborn.heatmap.
+7. Train decision trees with different max_depth values (e.g., None, 2–7), calculate their accuracy scores, save each tree visualization, and plot a line graph of accuracy vs. max_depth.
