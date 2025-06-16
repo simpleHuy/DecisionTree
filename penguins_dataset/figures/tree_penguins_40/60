@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="num__flipper_length_mm <= 206.5\nentropy = 1.52\nsamples = 100.0%\nvalue = [0.436, 0.203, 0.361]\nclass = Adelie", fillcolor="#fcf0e8"] ;
+1 [label="num__bill_length_mm <= 44.4\nentropy = 0.877\nsamples = 60.9%\nvalue = [0.704, 0.296, 0.0]\nclass = Adelie", fillcolor="#f0b68c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="num__bill_length_mm <= 40.85\nentropy = 0.216\nsamples = 43.6%\nvalue = [0.966, 0.034, 0.0]\nclass = Adelie", fillcolor="#e68640"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 37.6%\nvalue = [1.0, 0.0, 0.0]\nclass = Adelie", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="cat__sex_Male <= 0.5\nentropy = 0.811\nsamples = 6.0%\nvalue = [0.75, 0.25, 0.0]\nclass = Adelie", fillcolor="#eeab7b"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 1.5%\nvalue = [0.0, 1.0, 0.0]\nclass = Chinstrap", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 4.5%\nvalue = [1.0, 0.0, 0.0]\nclass = Adelie", fillcolor="#e58139"] ;
+4 -> 6 ;
+7 [label="num__bill_length_mm <= 46.1\nentropy = 0.258\nsamples = 17.3%\nvalue = [0.043, 0.957, 0.0]\nclass = Chinstrap", fillcolor="#42e687"] ;
+1 -> 7 ;
+8 [label="cat__sex_Male <= 0.5\nentropy = 0.918\nsamples = 2.3%\nvalue = [0.333, 0.667, 0.0]\nclass = Chinstrap", fillcolor="#9cf2c0"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 1.5%\nvalue = [0.0, 1.0, 0.0]\nclass = Chinstrap", fillcolor="#39e581"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 0.8%\nvalue = [1.0, 0.0, 0.0]\nclass = Adelie", fillcolor="#e58139"] ;
+8 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 15.0%\nvalue = [0.0, 1.0, 0.0]\nclass = Chinstrap", fillcolor="#39e581"] ;
+7 -> 11 ;
+12 [label="num__bill_depth_mm <= 17.65\nentropy = 0.454\nsamples = 39.1%\nvalue = [0.019, 0.058, 0.923]\nclass = Gentoo", fillcolor="#8b49e7"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="entropy = 0.0\nsamples = 36.1%\nvalue = [0.0, 0.0, 1.0]\nclass = Gentoo", fillcolor="#8139e5"] ;
+12 -> 13 ;
+14 [label="num__bill_length_mm <= 46.55\nentropy = 0.811\nsamples = 3.0%\nvalue = [0.25, 0.75, 0.0]\nclass = Chinstrap", fillcolor="#7beeab"] ;
+12 -> 14 ;
+15 [label="entropy = 0.0\nsamples = 0.8%\nvalue = [1.0, 0.0, 0.0]\nclass = Adelie", fillcolor="#e58139"] ;
+14 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 2.3%\nvalue = [0.0, 1.0, 0.0]\nclass = Chinstrap", fillcolor="#39e581"] ;
+14 -> 16 ;
+}
