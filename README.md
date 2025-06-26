@@ -22,6 +22,7 @@ The project aims to provide a comprehensive, hands-on introduction to Decision T
 ## Prerequisites
 - Python 3 or higher
 - pip (Python package manager)
+- Graphviz
   
 ## How to run
 
