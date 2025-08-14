@@ -13,6 +13,45 @@ Key features:
 
 The project aims to provide a comprehensive, hands-on introduction to Decision Tree learning and its practical applications.
 
+## Repository Overview
+
+This course project showcases decision tree classification on three real‑world datasets. All code resides in Jupyter notebooks; there is no Python package or module structure.
+
+### Repository Layout
+
+```
+DecisionTree/
+├── README.md                – setup and run instructions
+├── requirements.txt         – dependencies (matplotlib, scikit‑learn, seaborn, graphviz, ucimlrepo)
+├── heart_disease_dataset/
+│   ├── heart_disease.csv
+│   ├── heart_disease.ipynb  – data prep, training, evaluation
+│   └── output/              – confusion matrix, tree images, accuracy vs. depth plots
+├── Rice_Dataset/
+│   ├── Rice_Cammeo_Osmancik.csv
+│   ├── rice_source.ipynb
+│   └── output/
+└── penguins_dataset/
+    ├── penguins.csv
+    ├── PalmerPenguins.ipynb
+    ├── output/
+    └── tree_depth_None      – exported Graphviz tree
+```
+
+### Important Concepts
+
+- **Notebook‑centric workflow** – each dataset has its own `.ipynb` notebook combining data loading, preprocessing, model training and evaluation.
+- **scikit‑learn `DecisionTreeClassifier`** – notebooks train decision trees (entropy or Gini criteria) with `train_test_split`, pipelines, and optional scaling.
+- **Visualization** – Graphviz, Matplotlib, and Seaborn create tree diagrams, accuracy curves, and confusion matrices.
+- **Outputs saved to disk** – model artifacts and charts are written to the `output/` subfolders for later inspection.
+
+### Next Steps for a Newcomer
+
+1. **Read the notebooks** – walk through each cell to understand data cleaning, feature engineering, model training, and evaluation.
+2. **Experiment with parameters** – try different `max_depth`, `criterion`, or preprocessing options and observe their impact.
+3. **Learn scikit‑learn tooling** – explore `Pipeline`, `ColumnTransformer`, and evaluation utilities such as `classification_report`.
+4. **Extend the project** – add cross‑validation, hyper‑parameter tuning, reusable modules, or alternative tree algorithms like Random Forests.
+
 ## Team Members
 1. Trần Xuân Minh Hiển - 22120102
 2. Bùi Khánh Hưng - 22120119
@@ -63,3 +102,4 @@ The project aims to provide a comprehensive, hands-on introduction to Decision T
 #### a. Install `Visual Studio Code` [here](https://code.visualstudio.com/download)
 #### b. Install `Jupyter Notebook` extension in VSCode
 #### c. Run Dataset with options in VSCode Jupyter interface
+
